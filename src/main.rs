@@ -1,8 +1,12 @@
+use toggle_florp::random_color;
+
 fn main() {
+    let color = random_color();
     println!(
         "The color of the florp shall be:\n{} {} {}",
-        rand::random::<u8>(), // r
-        rand::random::<u8>(), // g
-        rand::random::<u8>()  // b
+        color.0,
+        color.1,
+        color.2,
     );
+
 }
